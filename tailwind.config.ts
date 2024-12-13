@@ -60,7 +60,41 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      keyframes: {
+        "hand-wave": {
+          "0%": { transform: "rotate(0.0deg)" },
+          "10%": { transform: "rotate(14deg)" },
+          "20%": { transform: "rotate(-8deg)" },
+          "30%": { transform: "rotate(14deg)" },
+          "40%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(10.0deg)" },
+          "60%": { transform: "rotate(0.0deg)" },
+          "100%": { transform: "rotate(0.0deg)" },
+        },
+        "border-spin": {
+          "100%": {
+            transform: "rotate(-360deg)",
+          },
+        },
+        "fade-out": {
+          "0%": { opacity: "1" },
+
+          "100%": { opacity: "0" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0" },
+
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        "waving-hand": "hand-wave 2s linear infinite",
+        "border-spin": "border-spin 5s linear infinite",
+        "fade-out": "fade-out 0.5s  forwards",
+        "fade-in-2": "fade-in 0s  forwards", // Starts after 1 second
+        "fade-in-3": "fade-in 1s  ease-in forwards", // Starts after 2 seconds
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 } satisfies Config;

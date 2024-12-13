@@ -71,3 +71,14 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+@layer utilities {
+  /*Act as border*/
+  .image-wrapper {
+    @apply relative overflow-hidden h-[200px] w-[200px] rounded-xl;
+  }
+  /* Content */
+  .image-content {
+    @apply absolute  inset-0 z-[2] rounded-xl;
+  }
+}

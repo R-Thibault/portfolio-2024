@@ -31,21 +31,21 @@ export function ProjectCard({
 
       <CardContent className="absolute inset-0 flex flex-col justify-center items-center p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="absolute top-4 left-4 z-10">
-          <h3 className="text-lg font-semibold text-white bg-primary px-2 py-1 rounded">
+          <h3 className="text-lg font-semibold text-white bg-primary px-2 py-1 rounded inline-block">
             {title}
           </h3>
-        </div>
-        <p className="text-sm mb-4 text-center">{description}</p>
-        <div className="flex flex-wrap justify-center gap-2 mb-4">
-          {technologies.map((tech, index) => (
-            <Badge
-              key={index}
-              variant="outline"
-              className="bg-primary text-primary-foreground"
-            >
-              {tech}
-            </Badge>
-          ))}
+          <p className="text-sm my-4 text-center">{description}</p>
+          <div className="flex flex-wrap justify-center gap-2 mb-4">
+            {technologies.map((tech, index) => (
+              <Badge
+                key={index}
+                variant="outline"
+                className="bg-primary text-primary-foreground"
+              >
+                {tech}
+              </Badge>
+            ))}
+          </div>
         </div>
       </CardContent>
 

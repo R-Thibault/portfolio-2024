@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import BlogContent from "@/components/organisms/BlogArticle";
+import BlogArticle from "@/components/organisms/BlogArticle";
 import { projectsBlogDatas } from "@/datas/projectsBlog";
 import { projectsCardDatas } from "@/datas/projectsCardData";
 import { ProjectCardBlog } from "@/components/molecules/ProjectCardBlog";
@@ -84,7 +84,7 @@ export default function Page() {
           </p>
         </div>
       ) : (
-        <BlogContent project={currentProject}></BlogContent>
+        <BlogArticle project={currentProject}></BlogArticle>
       )}
     </>
   );

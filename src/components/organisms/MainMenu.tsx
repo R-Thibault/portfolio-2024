@@ -30,7 +30,7 @@ export default function MainMenu() {
 
       {/* Desktop Menu */}
       <div className=" hidden md:flex ">
-        <ul className=" grow flex justify-center">
+        <ul className=" grow flex justify-center md:gap-24">
           <MenuItem href={"/"}>home</MenuItem>
           <MenuItem href={"/projects/1"}>projects</MenuItem>
           <MenuItem href={"/contact"}>contact</MenuItem>

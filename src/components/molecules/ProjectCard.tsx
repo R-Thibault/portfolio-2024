@@ -16,14 +16,14 @@ export function ProjectCard({
   websiteUrl,
 }: ProjectCardType) {
   return (
-    <Card className="w-full max-w-sm h-72 overflow-hidden relative group">
+    <Card className="w-full max-w-md h-[16em] overflow-hidden relative group">
       <Image
         src={imageUrl}
         alt={title}
         width={500}
-        height={300}
+        height={500}
         style={{
-          objectFit: "cover",
+          objectFit: "fill",
         }}
         className="transition-transform duration-300 group-hover:scale-110 w-full h-full"
       />
@@ -49,7 +49,7 @@ export function ProjectCard({
         </div>
       </CardContent>
 
-      <CardFooter className="absolute bottom-4 left-0 right-0 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <CardFooter className=" pb-4 absolute bottom-0 left-0 right-0 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <Button variant="outline" size="sm" asChild>
           <Link href={githubUrl} target="_blank" rel="noopener noreferrer">
             <Image

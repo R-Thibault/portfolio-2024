@@ -7,22 +7,61 @@ import { Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectBlogType } from "@/types/projetBlogType";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
+import { Card, CardContent } from "../ui/card";
 
-export default function BlogContent({ project }: { project: ProjectBlogType }) {
+export default function BlogArticle({ project }: { project: ProjectBlogType }) {
   return (
     <div className="max-w-7xl mx-auto px-1 sm:px-6 lg:px-8 py-8">
       {/* Blog Header */}
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-2xl mx-auto">
         <h1 className="text-4xl font-extrabold mb-4">{project.title}</h1>
         <p className="text-gray-500 text-sm mb-6">{project.description}</p>
-
-        <Image
-          src={project.imageUrl}
-          alt={project.title}
-          width={800}
-          height={450}
-          className="w-full h-auto mb-8"
-        />
+        <div className="flex justify-center items-center">
+          <Carousel
+            className="sm:max-w-lg  max-w-md my-4 h-[16em] "
+            opts={{
+              align: "center",
+            }}
+          >
+            <CarouselContent>
+              {project.imageUrl.map((image, index) => (
+                <CarouselItem key={index}>
+                  <div>
+                    <Card className="bg-slate-100 max-h-64">
+                      <CardContent className="flex md:max-w-md sm:max-w-md max-w-xs items-center justify-center p-0 rounded-xl">
+                        <Link href={image} target="_blank">
+                          <Image
+                            src={image}
+                            alt={project.title + index}
+                            width={800}
+                            height={800}
+                            style={{
+                              objectFit: "fill",
+                            }}
+                            className="rounded-xl"
+                          />
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            {project.imageUrl.length > 1 && (
+              <>
+                <CarouselPrevious className="hidden md:flex" />
+                <CarouselNext className="hidden md:flex" />
+              </>
+            )}
+          </Carousel>
+        </div>
       </div>
 
       {/* Technologies */}
@@ -72,7 +111,11 @@ export default function BlogContent({ project }: { project: ProjectBlogType }) {
       </div>
       {/* Blog Content */}
       <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
-        <p>{project.content}</p>
+        {project.content.map((paragraph, index) => (
+          <p key={index} className="py-4">
+            {paragraph}
+          </p>
+        ))}
       </div>
     </div>
   );

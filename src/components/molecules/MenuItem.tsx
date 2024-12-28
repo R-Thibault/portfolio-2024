@@ -5,9 +5,13 @@ import { MenuProps } from "@/types/menuProps";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function MenuItem({ children, href }: MenuProps) {
+export default function MenuItem({ children, href, onClick }: MenuProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
+
+  const handleClick = () => {
+    if (onClick) onClick();
+  };
 
   return (
     <li>
@@ -18,6 +22,7 @@ export default function MenuItem({ children, href }: MenuProps) {
             "bg-primary hover:bg-primary dark:hover:bg-primary hover:text-primary-foreground text-primary-foreground"
         )}
         href={href}
+        onClick={handleClick}
       >
         {children}
       </Link>

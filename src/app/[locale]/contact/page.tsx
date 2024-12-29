@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { useTranslations } from "next-intl";
 import ContactSuccess from "@/components/organisms/ContactSucess";
 
 export default function Page() {
+  const t = useTranslations("ContactForm");
   const formId = process.env.NEXT_PUBLIC_FORMSPREE || "xqkonawp";
   const [state, handleSubmit] = useForm(formId);
   if (state.succeeded) {
@@ -16,12 +18,9 @@ export default function Page() {
   return (
     <div className="py-6 lg:py-14 px-4 mx-auto max-w-screen-md">
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center ">
-        Let&apos;s Talk
+        {t("title")}
       </h2>
-      <p className="mb-6 text-center text-gray-500">
-        Got an idea or a question? Feel free to reach out using the form below,
-        and I&apos;ll get back to you as soon as possible.
-      </p>
+      <p className="mb-6 text-center text-gray-500">{t("description")}</p>
       <form
         name="contact"
         method="POST"
@@ -32,7 +31,7 @@ export default function Page() {
 
         <div>
           <label htmlFor="email" className="block mb-1 text-lg font-medium ">
-            Email:
+            {t("emailLabel")}
           </label>
           <input
             required
@@ -45,7 +44,7 @@ export default function Page() {
         </div>
         <div>
           <label htmlFor="message" className="block mb-1 text-lg font-medium ">
-            Message:
+            {t("messageLabel")}
           </label>
           <textarea
             required
@@ -64,7 +63,7 @@ export default function Page() {
             type="submit"
             className="py-3 px-5 text-lg font-medium text-center text-white rounded-lg bg-stone-900 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300"
           >
-            Send
+            {t("submitButton")}
           </button>
         </div>
       </form>

@@ -1,15 +1,32 @@
 "use client";
 
-import { useRouter, usePathname } from "next/navigation";
-import React, { useState } from "react";
+import { useRouter, usePathname, redirect } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 export default function LanguageSelector() {
   const router = useRouter();
   const pathname = usePathname();
 
   const currentLocale = pathname.split("/")[1];
-  const supportedLocales = ["en", "fr"];
+  const supportedLocales = React.useMemo(() => ["en", "fr"], []);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Detect the user's preferred language
+      const browserLanguage = navigator.language.split("-")[0];
+
+      // Redirect only on the first visit if the current locale is unsupported
+      if (!supportedLocales.includes(currentLocale)) {
+        const preferredLocale = supportedLocales.includes(browserLanguage)
+          ? browserLanguage
+          : "en"; // Default fallback to "en"
+
+        const newPathname = `/${preferredLocale}${pathname}`;
+        redirect(newPathname); // Redirect using i18n/routing's redirect
+      }
+    }
+  }, [currentLocale, pathname, supportedLocales]);
 
   const handleSelect = (selectedLocale: string) => {
     if (currentLocale !== selectedLocale) {

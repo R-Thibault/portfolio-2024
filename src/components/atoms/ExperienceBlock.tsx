@@ -18,7 +18,11 @@ export default function ExperienceBlock(props: experienceType) {
       </div>
 
       <div>
-        <p>{props.jobDescription}</p>
+        {props.jobDescription.map((sentence, index) => (
+          <p key={index} className="text-gray-700">
+            {sentence}
+          </p>
+        ))}
       </div>
     </div>
   );

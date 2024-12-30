@@ -20,25 +20,36 @@
       "jobTitle": "Développeur Full-stack",
       "from": "2023-09-01",
       "to": "2024-09-01",
-      "jobDescription": "Migration d'une application PHP sous Docker avec déploiement en production via Traefik, optimisation des déploiements clients et amélioration de la sécurité logicielle. Mise à jour majeure (PHP 7 vers PHP 8) de la même application, avec améliorations de sécurité et optimisation. Refonte du système de notifications de l'application, optimisation des requêtes SQL et des réponses serveur, ainsi qu'améliorations de l'expérience utilisateur et de l'évolutivité des notifications. Réalisation de 40 % des développements clients en collaboration avec l'équipe technique, dans le cadre d'une feuille de route de 6 mois.",
+      "jobDescription": [
+        "Migration d'une application PHP sous Docker avec déploiement en production via Traefik, optimisation des déploiements clients et amélioration de la sécurité logicielle.",
+        "Mise à jour majeure (PHP 7 vers PHP 8) de la même application, avec améliorations de sécurité et optimisation.",
+        "Refonte du système de notifications de l'application, optimisation des requêtes SQL et des réponses serveur, ainsi qu'améliorations de l'expérience utilisateur et de l'évolutivité des notifications.",
+        "Réalisation de 40 % des développements clients en collaboration avec l'équipe technique, dans le cadre d'une feuille de route de 6 mois."
+      ],
       "jobWhere": "Lyon"
     },
     {
       "id": 2,
       "companyName": "Spit / Factory Plast / KPlast",
-      "jobTitle": "Technicien Senior/Chef d'équipe",
+      "jobTitle": "Technicien Supérieur/Chef d'équipe",
       "from": "2019-01-01",
       "to": "2023-01-01",
-      "jobDescription": "Formation et accompagnement des techniciens pour optimiser les processus industriels, conduite d'essais pour résoudre des problèmes complexes ou introduire de nouveaux produits en production. Gestion d'équipes et supervision des plannings de production sur des parcs de 15 à 25 machines.",
+      "jobDescription": [
+        "Formation et accompagnement des techniciens pour optimiser les processus industriels.",
+        "Conduite d'essais pour résoudre des problèmes complexes ou introduire de nouveaux produits en production.",
+        "Gestion d'équipes et supervision des plannings de production sur des parcs de 15 à 25 machines."
+      ],
       "jobWhere": "France"
     },
     {
       "id": 3,
       "companyName": "Elite Polymer / Sistema Ltd",
-      "jobTitle": "Technicien Senior/Chef d'équipe",
+      "jobTitle": "Technicien Supérieur/Chef d'équipe",
       "from": "2017-01-01",
       "to": "2019-01-01",
-      "jobDescription": "Gestion d'équipes et optimisation des processus industriels pour un parc de 45 machines.",
+      "jobDescription": [
+        "Gestion d'équipes et optimisation des processus industriels pour un parc de 45 machines."
+      ],
       "jobWhere": "Nouvelle-Zélande"
     }
   ],
@@ -89,7 +100,7 @@
   "projectCards": [
     {
       "id": 1,
-      "title": "Mon Portfolio",
+      "title": "Mon portfolio",
       "description": "Portfolio créé avec Next.js pour le moment, avec des plans d'intégration d'une API et d'un backend.",
       "imageUrl": "/projects/portfolio/portfolio.png",
       "technologies": ["JS", "TS", "Next.JS", "Tailwind", "Shadcn"],
@@ -98,7 +109,7 @@
     },
     {
       "id": 2,
-      "title": "Site du Photographe",
+      "title": "Site pour photographe",
       "description": "Développement d'un site web pour photographe avec Next.js et TailwindCSS. Grâce à un CMS headless (Contentful), le photographe peut gérer les photos, albums, tarifs, et plus encore.",
       "imageUrl": "/projects/photowebsite/photowebsitegallery2.png",
       "technologies": ["JS", "TS", "Next.JS"],
@@ -146,7 +157,7 @@
   "projectsBlog": [
     {
       "id": 1,
-      "title": "Mon Portfolio",
+      "title": "Mon portfolio",
       "description": "Portfolio construit avec Next.js pour l'instant, avec des plans pour intégrer une API et un backend.",
       "content": [
         "Ce portfolio est un projet personnel conçu pour présenter mes compétences et projets. Développé avec Next.js, il utilise TailwindCSS pour un design moderne et réactif, ainsi que Shadcn UI pour des composants élégants et réutilisables.",
@@ -204,7 +215,7 @@
       "description": "Projet de fin d'année développé avec Next.js, Node.js et GraphQL. Ce site inclut des fonctionnalités de téléchargement de fichiers et de messagerie instantanée, offrant une expérience utilisateur riche et interactive.",
       "content": [
         "Le projet Ressources est un site développé dans le cadre de ma Licence Concepteur Développeur d'Applications, combinant des technologies modernes comme Next.js pour le frontend et Node.js pour le backend. L'intégration d'une API GraphQL permet une gestion optimisée des données, tandis que des fonctionnalités avancées telles que le téléchargement de fichiers et la messagerie instantanée améliorent l'expérience utilisateur.",
-        "J'ai eu l'idée de ce projet pendant mon année de Licence, en remarquant la difficulté que nous avions à conserver les connaissances partagées au cours de l'année. J'ai conçu les spécifications en fonction des exigences de mon diplôme, garantissant que le projet puisse être utilisé comme soumission finale pour mon examen de Licence."
+        "J'ai eu l'idée de ce projet pendant mon année de Licence, en remarquant la difficulté que nous avions à conserver les connaissances partagées au cours de l'année. J'ai conçu les spécifications techniques en fonction des exigences de mon diplôme, garantissant que le projet puisse être utilisé lors de mon examen finale de Licence."
       ],
       "imageUrl": [
         "/projects/ressources/ressources1.png",

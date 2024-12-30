@@ -21,7 +21,10 @@ export default function JobInfosDisplay() {
   const [skills] = useState(skillsDatas);
 
   return (
-    <Tabs defaultValue="experience" className="w-full mt-8 border-solid">
+    <Tabs
+      defaultValue="experience"
+      className="w-full mt-8 p-2 shadow border  rounded-xl"
+    >
       <div className="bg-[#DCD5D5] rounded-xl shadow">
         <TabsList className="grid w-full grid-cols-3">
           <TabsTrigger value="experience" className="hover:bg-gray-200">

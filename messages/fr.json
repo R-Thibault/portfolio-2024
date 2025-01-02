@@ -235,5 +235,8 @@
       "websiteUrl": "https://ressources.thibault-rossa.fr/",
       "githubUrl": "https://github.com/R-Thibault/portfolio.git"
     }
-  ]
+  ],
+  "projectBlog": {
+    "projectBlog": "Technologies utilisées"
+  }
 }

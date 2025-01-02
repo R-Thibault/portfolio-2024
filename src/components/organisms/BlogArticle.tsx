@@ -15,8 +15,10 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 import { Card, CardContent } from "../ui/card";
+import { useTranslations } from "next-intl";
 
 export default function BlogArticle({ project }: { project: ProjectBlogType }) {
+  const t = useTranslations("projectBlog");
   return (
     <div className="max-w-7xl mx-auto px-1 sm:px-6 lg:px-8 py-8">
       {/* Blog Header */}
@@ -67,7 +69,7 @@ export default function BlogArticle({ project }: { project: ProjectBlogType }) {
       {/* Technologies */}
       <div className="flex flex-col md:flex-row my-10">
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
+          <h2 className="text-2xl font-semibold mb-4">{t("projectBlog")}</h2>
           <div className="flex flex-wrap justify-center gap-2 mb-4">
             {project.technologies.map((tech, index) => (
               <Badge
@@ -81,7 +83,7 @@ export default function BlogArticle({ project }: { project: ProjectBlogType }) {
           </div>
         </div>
         {/* Links */}
-        <div className="mt-10 flex gap-4">
+        <div className="mt-10 flex gap-4 ml-4">
           <Button variant="outline" size="sm" asChild>
             <Link
               href={project.githubUrl}

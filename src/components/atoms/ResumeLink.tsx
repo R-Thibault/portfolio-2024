@@ -1,14 +1,16 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React from "react";
 
 export default function ResumeLink() {
+  const t = useTranslations("proLinks");
   return (
     <Link
       href="/cv/cv-thibault-rossa.pdf"
       target="_blank"
       className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
     >
-      <span className="font-semibold">Resume</span>
+      <span className="font-semibold">{t("resume")}</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

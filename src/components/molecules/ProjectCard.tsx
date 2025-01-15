@@ -29,7 +29,7 @@ export function ProjectCard({ projectCard }: { projectCard: ProjectCardType }) {
             {projectCard.title}
           </h3>
           <p className="text-sm my-4 text-center">{projectCard.description}</p>
-          <div className="flex flex-wrap justify-center gap-2 mb-4">
+          <div className="flex flex-wrap justify-center gap-1 mb-4">
             {projectCard.technologies.map((tech, index) => (
               <Badge
                 key={index}
@@ -43,8 +43,8 @@ export function ProjectCard({ projectCard }: { projectCard: ProjectCardType }) {
         </div>
       </CardContent>
 
-      <CardFooter className=" pb-4 absolute bottom-0 left-0 right-0 flex justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <Button variant="outline" size="sm" asChild>
+      <CardFooter className="p-1  absolute bottom-0 left-0 right-0 flex flex-wrap gap-2 justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+        <Button variant="outline" size="sm" asChild className="p-2">
           <Link
             href={projectCard.githubUrl}
             target="_blank"
@@ -59,23 +59,23 @@ export function ProjectCard({ projectCard }: { projectCard: ProjectCardType }) {
             GitHub
           </Link>
         </Button>
-        <Button variant="outline" size="sm" asChild>
+        <Button variant="outline" size="sm" asChild className="p-2">
           <Link
             href={projectCard.websiteUrl}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Globe className="w-4 h-4 mr-2" />
-            Website
+            <Globe className="w-4 h-4" />
+            {projectCard.website}
           </Link>
         </Button>
-        <Button variant="outline" size="sm" asChild>
+        <Button variant="outline" size="sm" asChild className="p-2">
           <Link
             href={`/${locale}/projects/` + projectCard.id}
             rel="noopener noreferrer"
           >
-            <Globe className="w-4 h-4 mr-2" />
-            More infos
+            <Globe className="w-4 h-4" />
+            {projectCard.moreInfos}
           </Link>
         </Button>
       </CardFooter>

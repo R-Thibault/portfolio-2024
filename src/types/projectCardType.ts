@@ -6,6 +6,8 @@ export type ProjectCardType = {
   technologies: string[];
   githubUrl: string;
   websiteUrl: string;
+  website: string;
+  moreInfos: string;
 };
 
 export type ProjectCardBlogType = {

@@ -13,6 +13,9 @@
     "skillsTab": "Compétences",
     "educationsTab": "Etudes"
   },
+  "proLinks": {
+    "resume": "Mon CV"
+  },
   "experiences": [
     {
       "id": 1,
@@ -105,7 +108,9 @@
       "imageUrl": "/projects/portfolio/portfolio.png",
       "technologies": ["JS", "TS", "Next.JS", "Tailwind", "Shadcn"],
       "websiteUrl": "https://portfolio.thibault-rossa.fr/",
-      "githubUrl": "https://github.com/R-Thibault/portfolio-2024"
+      "githubUrl": "https://github.com/R-Thibault/portfolio-2024",
+      "website": "site",
+      "moreInfos": "Plus d'infos"
     },
     {
       "id": 2,
@@ -114,7 +119,9 @@
       "imageUrl": "/projects/photowebsite/photowebsitegallery2.png",
       "technologies": ["JS", "TS", "Next.JS"],
       "websiteUrl": "https://photowebsite.thibault-rossa.fr/",
-      "githubUrl": "https://github.com/R-Thibault/contentful-photowebsite"
+      "githubUrl": "https://github.com/R-Thibault/contentful-photowebsite",
+      "website": "site",
+      "moreInfos": "Plus d'infos"
     },
     {
       "id": 3,
@@ -123,7 +130,9 @@
       "imageUrl": "/projects/quaiAntique/quaiAntique1.png",
       "technologies": ["PHP", "TWIG", "Symfony"],
       "websiteUrl": "https://quai-antique.thibault-rossa.fr/",
-      "githubUrl": "https://github.com/R-Thibault/le_quai_antique"
+      "githubUrl": "https://github.com/R-Thibault/le_quai_antique",
+      "website": "site",
+      "moreInfos": "Plus d'infos"
     },
     {
       "id": 4,
@@ -140,7 +149,9 @@
         "REST"
       ],
       "websiteUrl": "https://ressources.thibault-rossa.fr/",
-      "githubUrl": "https://github.com/R-Thibault/portfolio.git"
+      "githubUrl": "https://github.com/R-Thibault/portfolio.git",
+      "website": "site",
+      "moreInfos": "Plus d'infos"
     }
   ],
   "ContactSuccess": {
@@ -167,7 +178,8 @@
       "imageUrl": ["/projects/portfolio/portfolio.png"],
       "technologies": ["JS", "TS", "Next.JS", "Tailwind", "Shadcn"],
       "websiteUrl": "https://portfolio.thibault-rossa.fr/",
-      "githubUrl": "https://github.com/R-Thibault/portfolio-2024"
+      "githubUrl": "https://github.com/R-Thibault/portfolio-2024",
+      "website": "site"
     },
     {
       "id": 2,
@@ -188,7 +200,8 @@
       ],
       "technologies": ["JS", "TS", "Next.JS"],
       "websiteUrl": "https://photowebsite.thibault-rossa.fr/",
-      "githubUrl": "https://github.com/R-Thibault/contentful-photowebsite"
+      "githubUrl": "https://github.com/R-Thibault/contentful-photowebsite",
+      "website": "site"
     },
     {
       "id": 3,
@@ -207,7 +220,8 @@
       ],
       "technologies": ["PHP", "TWIG", "Symfony"],
       "websiteUrl": "https://quai-antique.thibault-rossa.fr/",
-      "githubUrl": "https://github.com/R-Thibault/le_quai_antique"
+      "githubUrl": "https://github.com/R-Thibault/le_quai_antique",
+      "website": "site"
     },
     {
       "id": 4,
@@ -233,7 +247,8 @@
         "REST"
       ],
       "websiteUrl": "https://ressources.thibault-rossa.fr/",
-      "githubUrl": "https://github.com/R-Thibault/portfolio.git"
+      "githubUrl": "https://github.com/R-Thibault/portfolio.git",
+      "website": "site"
     }
   ],
   "projectBlog": {

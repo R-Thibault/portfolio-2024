@@ -20,11 +20,11 @@ import { useTranslations } from "next-intl";
 export default function BlogArticle({ project }: { project: ProjectBlogType }) {
   const t = useTranslations("projectBlog");
   return (
-    <div className="max-w-7xl mx-auto px-1 sm:px-6 lg:px-8 py-8">
+    <div className="max-w-7xl mx-auto px-1 sm:px-6 lg:px-8 py-8 ">
       {/* Blog Header */}
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4">{project.title}</h1>
-        <p className="text-gray-500 text-sm mb-6">{project.description}</p>
+        <h1 className="text-4xl font-extrabold mb-4 ">{project.title}</h1>
+        <p className="text-gray-500 text-lg mb-6 ">{project.description}</p>
         <div className="flex justify-center items-center">
           <Carousel
             className="sm:max-w-lg  max-w-md my-4 h-[16em] "
@@ -106,7 +106,7 @@ export default function BlogArticle({ project }: { project: ProjectBlogType }) {
               rel="noopener noreferrer"
             >
               <Globe className="w-4 h-4 mr-2" />
-              Website
+              {project.website}
             </Link>
           </Button>
         </div>
@@ -114,7 +114,7 @@ export default function BlogArticle({ project }: { project: ProjectBlogType }) {
       {/* Blog Content */}
       <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
         {project.content.map((paragraph, index) => (
-          <p key={index} className="py-4">
+          <p key={index} className="py-4 ">
             {paragraph}
           </p>
         ))}

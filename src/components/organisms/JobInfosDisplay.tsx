@@ -25,15 +25,24 @@ export default function JobInfosDisplay() {
       defaultValue="experience"
       className="w-full mt-8 p-2 shadow border  rounded-xl"
     >
-      <div className="bg-[#DCD5D5] rounded-xl shadow">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="experience" className="hover:bg-gray-200">
+      <div className="bg-[#DCD5D5] rounded-xl shadow ">
+        <TabsList className="grid w-full grid-cols-3 ">
+          <TabsTrigger
+            value="experience"
+            className="hover:bg-gray-200 md:text-base "
+          >
             {jobInfosDisplay("experiencesTab")}
           </TabsTrigger>
-          <TabsTrigger value="skills" className="hover:bg-gray-200">
+          <TabsTrigger
+            value="skills"
+            className="hover:bg-gray-200 md:text-base"
+          >
             {jobInfosDisplay("skillsTab")}
           </TabsTrigger>
-          <TabsTrigger value="education" className="hover:bg-gray-200">
+          <TabsTrigger
+            value="education"
+            className="hover:bg-gray-200 md:text-base"
+          >
             {jobInfosDisplay("educationsTab")}
           </TabsTrigger>
         </TabsList>

@@ -7,4 +7,5 @@ export type ProjectBlogType = {
   technologies: string[];
   githubUrl: string;
   websiteUrl: string;
+  website: string;
 };

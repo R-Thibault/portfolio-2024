@@ -9,7 +9,7 @@ export default function ExperiencesDisplay({
   experiences: experienceType[];
 }) {
   return (
-    <div className="flex flex-row flex-wrap gap-4 justify-between h-full">
+    <div className="flex w-full flex-row flex-wrap gap-4 justify-between h-full">
       {experiences.map((experience) => (
         <ExperienceBlock
           key={experience.id}

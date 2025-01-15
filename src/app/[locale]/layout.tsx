@@ -48,7 +48,7 @@ export default async function LocaleLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className="mx-auto flex min-h-screen max-w-4xl flex-col ">
+      <body className="mx-auto flex min-h-screen max-w-4xl flex-col text-lg">
         <NextIntlClientProvider messages={messages}>
           <main className="grow md:px-8 px-2">
             <MainMenu />

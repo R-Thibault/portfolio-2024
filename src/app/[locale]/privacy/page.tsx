@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 
-export default function page() {
+export default function Page() {
   return (
     <div className="max-w-3xl mx-auto px-6 py-8">
       <Card className="shadow-md">

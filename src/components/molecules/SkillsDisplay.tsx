@@ -2,11 +2,13 @@
 import React from "react";
 import { SkillType } from "@/types/skillType";
 import SkillLogo from "../atoms/SkillLogo";
+import { useTranslations } from "next-intl";
 
 export default function SkillsDisplay({ skills }: { skills: SkillType[] }) {
+  const skillsT = useTranslations("skillsCat");
   return (
     <div className="flex flex-col h-full">
-      <h3 className="p-2 font-semibold">Languages:</h3>
+      <h3 className="p-2 font-semibold">{skillsT("languages")}:</h3>
       <div className="flex flex-row flex-wrap gap-4 justify-between w-full">
         {skills.map((skill) =>
           skill.type === "languages" ? (
@@ -21,7 +23,7 @@ export default function SkillsDisplay({ skills }: { skills: SkillType[] }) {
           ) : null
         )}
       </div>
-      <h3 className="p-2 font-semibold">Frameworks:</h3>
+      <h3 className="p-2 font-semibold">{skillsT("frameworks")}:</h3>
       <div className="flex flex-row flex-wrap gap-4 justify-between w-full items-center">
         {skills.map((skill) =>
           skill.type === "frameworks" ? (
@@ -36,7 +38,7 @@ export default function SkillsDisplay({ skills }: { skills: SkillType[] }) {
           ) : null
         )}
       </div>
-      <h3 className="p-2 font-semibold">Applications:</h3>
+      <h3 className="p-2 font-semibold">{skillsT("applications")}:</h3>
       <div className="flex flex-row flex-wrap gap-4 justify-between w-full">
         {skills.map((skill) =>
           skill.type === "applications" ? (

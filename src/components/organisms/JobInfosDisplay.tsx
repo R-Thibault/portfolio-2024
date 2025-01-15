@@ -3,28 +3,47 @@ import React, { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SkillsDisplay from "../molecules/SkillsDisplay";
 import { skillsDatas } from "@/datas/skills";
-
-import { experiencesDatas } from "@/datas/experiences";
+import { useLocale } from "next-intl";
+import enTranslations from "../../../messages/en.json";
+import frTranslations from "../../../messages/fr.json";
 import ExperiencesDisplay from "../molecules/ExperiencesDisplay";
 import EducationsDisplay from "../molecules/EducationsDisplay";
-import { educationsDatas } from "@/datas/educations";
+
+import { useTranslations } from "next-intl";
 
 export default function JobInfosDisplay() {
+  const jobInfosDisplay = useTranslations("JobInfosDisplay");
+  const locale = useLocale();
+
+  const translations = locale === "fr" ? frTranslations : enTranslations;
+  const experiences = translations.experiences;
+  const educations = translations.educations;
   const [skills] = useState(skillsDatas);
-  const [experiences] = useState(experiencesDatas);
-  const [educations] = useState(educationsDatas);
+
   return (
-    <Tabs defaultValue="experience" className="w-full mt-8 border-solid">
-      <div className="bg-[#DCD5D5] rounded-xl shadow">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="experience" className="hover:bg-gray-200">
-            Experiences
+    <Tabs
+      defaultValue="experience"
+      className="w-full mt-8 p-2 shadow border  rounded-xl"
+    >
+      <div className="bg-[#DCD5D5] rounded-xl shadow ">
+        <TabsList className="grid w-full grid-cols-3 ">
+          <TabsTrigger
+            value="experience"
+            className="hover:bg-gray-200 md:text-base "
+          >
+            {jobInfosDisplay("experiencesTab")}
           </TabsTrigger>
-          <TabsTrigger value="skills" className="hover:bg-gray-200">
-            Skills
+          <TabsTrigger
+            value="skills"
+            className="hover:bg-gray-200 md:text-base"
+          >
+            {jobInfosDisplay("skillsTab")}
           </TabsTrigger>
-          <TabsTrigger value="education" className="hover:bg-gray-200">
-            Educations
+          <TabsTrigger
+            value="education"
+            className="hover:bg-gray-200 md:text-base"
+          >
+            {jobInfosDisplay("educationsTab")}
           </TabsTrigger>
         </TabsList>
       </div>

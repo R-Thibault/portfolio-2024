@@ -1,0 +1,257 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "presentationCard": {
+    "hello": "Bonjour, ici Thibault",
+    "description": "Développeur expérimenté en JavaScript/TypeScript, PHP, et frameworks modernes. Je recherche activement des opportunités tout en élargissant mon expertise en Golang."
+  },
+  "JobInfosDisplay": {
+    "experiencesTab": "Experiences",
+    "skillsTab": "Compétences",
+    "educationsTab": "Etudes"
+  },
+  "proLinks": {
+    "resume": "Mon CV"
+  },
+  "experiences": [
+    {
+      "id": 1,
+      "companyName": "Terascop",
+      "jobTitle": "Développeur Full-stack",
+      "from": "2023-09-01",
+      "to": "2024-09-01",
+      "jobDescription": [
+        "Migration d'une application PHP sous Docker avec déploiement en production via Traefik, optimisation des déploiements clients et amélioration de la sécurité logicielle.",
+        "Mise à jour majeure (PHP 7 vers PHP 8) de la même application, avec améliorations de sécurité et optimisation.",
+        "Refonte du système de notifications de l'application, optimisation des requêtes SQL et des réponses serveur, ainsi qu'améliorations de l'expérience utilisateur et de l'évolutivité des notifications.",
+        "Réalisation de 40 % des développements clients en collaboration avec l'équipe technique, dans le cadre d'une feuille de route de 6 mois."
+      ],
+      "jobWhere": "Lyon"
+    },
+    {
+      "id": 2,
+      "companyName": "Spit / Factory Plast / KPlast",
+      "jobTitle": "Technicien Supérieur/Chef d'équipe",
+      "from": "2019-01-01",
+      "to": "2023-01-01",
+      "jobDescription": [
+        "Formation et accompagnement des techniciens pour optimiser les processus industriels.",
+        "Conduite d'essais pour résoudre des problèmes complexes ou introduire de nouveaux produits en production.",
+        "Gestion d'équipes et supervision des plannings de production sur des parcs de 15 à 25 machines."
+      ],
+      "jobWhere": "France"
+    },
+    {
+      "id": 3,
+      "companyName": "Elite Polymer / Sistema Ltd",
+      "jobTitle": "Technicien Supérieur/Chef d'équipe",
+      "from": "2017-01-01",
+      "to": "2019-01-01",
+      "jobDescription": [
+        "Gestion d'équipes et optimisation des processus industriels pour un parc de 45 machines."
+      ],
+      "jobWhere": "Nouvelle-Zélande"
+    }
+  ],
+  "skillsCat": {
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "applications": "Applications"
+  },
+  "educations": [
+    {
+      "id": 1,
+      "schoolName": "Wild Code School",
+      "from": "2023-01-01",
+      "to": "2024-01-01",
+      "educationTitle": "Licence Concepteur Développeur d'Applications (Apprentissage)",
+      "educationDescription": "Programme de formation en conception et développement d'applications, alliant approche pratique et théorique grâce à un apprentissage.",
+      "educationWhere": "Lyon"
+    },
+    {
+      "id": 2,
+      "schoolName": "STUDI",
+      "from": "2022-01-01",
+      "to": "2023-01-01",
+      "educationTitle": "BTS Développeur d'Applications",
+      "educationDescription": "Formation technique axée sur le développement d'applications avec un accent sur les technologies modernes.",
+      "educationWhere": "Lyon"
+    },
+    {
+      "id": 3,
+      "schoolName": "Polyvia Formation",
+      "from": "2015-01-01",
+      "to": "2017-01-01",
+      "educationTitle": "BTS Europlastic (Apprentissage)",
+      "educationDescription": "Formation spécialisée dans l'industrie des plastiques et polymères, incluant techniques de production et gestion.",
+      "educationWhere": "Lyon"
+    }
+  ],
+  "ContactForm": {
+    "title": "Discutons",
+    "description": "Vous avez une idée ou une question ? N'hésitez pas à me contacter via le formulaire ci-dessous, et je vous répondrai dès que possible.",
+    "emailLabel": "E-mail :",
+    "messageLabel": "Message :",
+    "submitButton": "Envoyer"
+  },
+  "myProjects": {
+    "myProjects": "Mes projets"
+  },
+  "projectCards": [
+    {
+      "id": 1,
+      "title": "Mon portfolio",
+      "description": "Portfolio créé avec Next.js pour le moment, avec des plans d'intégration d'une API et d'un backend.",
+      "imageUrl": "/projects/portfolio/portfolio.png",
+      "technologies": ["JS", "TS", "Next.JS", "Tailwind", "Shadcn"],
+      "websiteUrl": "https://portfolio.thibault-rossa.fr/",
+      "githubUrl": "https://github.com/R-Thibault/portfolio-2024",
+      "website": "site",
+      "moreInfos": "Plus d'infos"
+    },
+    {
+      "id": 2,
+      "title": "Site pour photographe",
+      "description": "Développement d'un site web pour photographe avec Next.js et TailwindCSS. Grâce à un CMS headless (Contentful), le photographe peut gérer les photos, albums, tarifs, et plus encore.",
+      "imageUrl": "/projects/photowebsite/photowebsitegallery2.png",
+      "technologies": ["JS", "TS", "Next.JS"],
+      "websiteUrl": "https://photowebsite.thibault-rossa.fr/",
+      "githubUrl": "https://github.com/R-Thibault/contentful-photowebsite",
+      "website": "site",
+      "moreInfos": "Plus d'infos"
+    },
+    {
+      "id": 3,
+      "title": "Le Quai Antique",
+      "description": "Site web créé avec Symfony : un projet fictif de restaurant intégrant un back-office pour gérer différentes fonctionnalités.",
+      "imageUrl": "/projects/quaiAntique/quaiAntique1.png",
+      "technologies": ["PHP", "TWIG", "Symfony"],
+      "websiteUrl": "https://quai-antique.thibault-rossa.fr/",
+      "githubUrl": "https://github.com/R-Thibault/le_quai_antique",
+      "website": "site",
+      "moreInfos": "Plus d'infos"
+    },
+    {
+      "id": 4,
+      "title": "Ressources",
+      "description": "Projet de fin d'année pour la licence CDA : un site développé avec Next.js, Node.js et une API GraphQL, intégrant le téléchargement de fichiers et une messagerie instantanée.",
+      "imageUrl": "/projects/ressources/ressources1.png",
+      "technologies": [
+        "JS",
+        "TS",
+        "NodeJS",
+        "Next.JS",
+        "Express",
+        "GraphQL",
+        "REST"
+      ],
+      "websiteUrl": "https://ressources.thibault-rossa.fr/",
+      "githubUrl": "https://github.com/R-Thibault/portfolio.git",
+      "website": "site",
+      "moreInfos": "Plus d'infos"
+    }
+  ],
+  "ContactSuccess": {
+    "successMessage": "Message envoyé avec succès !",
+    "redirectMessage": "Vous serez automatiquement redirigé vers la page d'accueil dans 5 secondes."
+  },
+  "loading": {
+    "loading": "Chargement..."
+  },
+  "articleNotFound": {
+    "notFound": "Article non trouvé",
+    "moved": "L&apos;article que vous cherchez n&apos;existe pas ou a été déplacé."
+  },
+  "projectsBlog": [
+    {
+      "id": 1,
+      "title": "Mon portfolio",
+      "description": "Portfolio construit avec Next.js pour l'instant, avec des plans pour intégrer une API et un backend.",
+      "content": [
+        "Ce portfolio est un projet personnel conçu pour présenter mes compétences et projets. Développé avec Next.js, il utilise TailwindCSS pour un design moderne et réactif, ainsi que Shadcn UI pour des composants élégants et réutilisables.",
+        "Le site est actuellement une vitrine statique, mais des fonctionnalités supplémentaires sont prévues, telles que l'intégration d'une API et d'un backend pour gérer dynamiquement les données affichées. Ce projet en constante évolution reflète ma volonté d'apprendre et d'améliorer mes compétences en développement web.",
+        "Mon portfolio est hébergé sur un serveur OVH avec Docker et Traefik. J'héberge également mes autres projets sur le même serveur, tous sous Docker et gérés via Traefik pour le routage."
+      ],
+      "imageUrl": ["/projects/portfolio/portfolio.png"],
+      "technologies": ["JS", "TS", "Next.JS", "Tailwind", "Shadcn"],
+      "websiteUrl": "https://portfolio.thibault-rossa.fr/",
+      "githubUrl": "https://github.com/R-Thibault/portfolio-2024",
+      "website": "site"
+    },
+    {
+      "id": 2,
+      "title": "Site d'un Photographe : Gestion Simplifiée et Design Moderne",
+      "description": "Découvrez ce site de photographe, développé avec Next.js et TailwindCSS. Avec un CMS headless (Contentful), le photographe peut gérer ses photos, albums, tarifs et bien plus encore.",
+      "content": [
+        "Ce projet de site pour photographe combine esthétisme et praticité. Construit avec Next.js et TailwindCSS, il offre une interface moderne et des performances optimales. Grâce à Contentful, un CMS headless, le photographe peut facilement gérer ses galeries, albums et tarifs sans effort technique.",
+        "Avec un accent sur le design et l'expérience utilisateur, ce site est l'outil parfait pour les professionnels de l'image souhaitant présenter leur travail avec élégance.",
+        "Ce projet a été le premier que j'ai réalisé lors de mon apprentissage de JavaScript et Next.js/React. Je prévois d'améliorer l'UI/UX de ce site et de remplacer le CMS par un back-office offrant une interface plus conviviale."
+      ],
+      "imageUrl": [
+        "/projects/photowebsite/photowebsitegallery1.png",
+        "/projects/photowebsite/photowebsitegallery2.png",
+        "/projects/photowebsite/photowebsitegallery3.png",
+        "/projects/photowebsite/photowebsitegallery4.png",
+        "/projects/photowebsite/photowebsitegallery5.png",
+        "/projects/photowebsite/photowebsitegallery6.png"
+      ],
+      "technologies": ["JS", "TS", "Next.JS"],
+      "websiteUrl": "https://photowebsite.thibault-rossa.fr/",
+      "githubUrl": "https://github.com/R-Thibault/contentful-photowebsite",
+      "website": "site"
+    },
+    {
+      "id": 3,
+      "title": "Le Quai Antique : Un Projet Culinaire Web",
+      "description": "Découvrez Le Quai Antique, un site vitrine créé avec Symfony et Twig, conçu pour un restaurant gastronomique fictif. Ce projet allie élégance et modernité, tout en offrant des fonctionnalités dynamiques telles qu'un système de réservation.",
+      "content": [
+        "Le Quai Antique est un projet réalisé avec Symfony et le moteur de templates Twig, hébergé sous Docker avec une base de données PostgreSQL.",
+        "L'objectif était de fournir un site moderne et fonctionnel reflétant l'univers raffiné d'un restaurant gastronomique. Avec un design réactif, un menu interactif et une gestion des réservations, ce site illustre parfaitement la combinaison de créativité et de technicité.",
+        "Ce projet a été ma première expérience avec Symfony. J'ai aimé travailler dessus, bien que j'aie rencontré quelques défis pour gérer les collections de formulaires."
+      ],
+      "imageUrl": [
+        "/projects/quaiAntique/quaiAntique1.png",
+        "/projects/quaiAntique/quaiAntique2.png",
+        "/projects/quaiAntique/quaiAntique3.png",
+        "/projects/quaiAntique/quaiAntique4.png"
+      ],
+      "technologies": ["PHP", "TWIG", "Symfony"],
+      "websiteUrl": "https://quai-antique.thibault-rossa.fr/",
+      "githubUrl": "https://github.com/R-Thibault/le_quai_antique",
+      "website": "site"
+    },
+    {
+      "id": 4,
+      "title": "Ressources : Un Projet Complet et Polyvalent",
+      "description": "Projet de fin d'année développé avec Next.js, Node.js et GraphQL. Ce site inclut des fonctionnalités de téléchargement de fichiers et de messagerie instantanée, offrant une expérience utilisateur riche et interactive.",
+      "content": [
+        "Le projet Ressources est un site développé dans le cadre de ma Licence Concepteur Développeur d'Applications, combinant des technologies modernes comme Next.js pour le frontend et Node.js pour le backend. L'intégration d'une API GraphQL permet une gestion optimisée des données, tandis que des fonctionnalités avancées telles que le téléchargement de fichiers et la messagerie instantanée améliorent l'expérience utilisateur.",
+        "J'ai eu l'idée de ce projet pendant mon année de Licence, en remarquant la difficulté que nous avions à conserver les connaissances partagées au cours de l'année. J'ai conçu les spécifications techniques en fonction des exigences de mon diplôme, garantissant que le projet puisse être utilisé lors de mon examen finale de Licence."
+      ],
+      "imageUrl": [
+        "/projects/ressources/ressources1.png",
+        "/projects/ressources/ressources2.png",
+        "/projects/ressources/ressources3.png",
+        "/projects/ressources/ressources4.png"
+      ],
+      "technologies": [
+        "JS",
+        "TS",
+        "NodeJS",
+        "Next.JS",
+        "Express",
+        "GraphQL",
+        "REST"
+      ],
+      "websiteUrl": "https://ressources.thibault-rossa.fr/",
+      "githubUrl": "https://github.com/R-Thibault/portfolio.git",
+      "website": "site"
+    }
+  ],
+  "projectBlog": {
+    "projectBlog": "Technologies utilisées"
+  }
+}

@@ -5,7 +5,7 @@ export default function SocialMediaLinks() {
   return (
     <section className="flex gap-6">
       <Link
-        href="https://linkedin.com/in/tedawf"
+        href="https://www.linkedin.com/in/thibault-rossa/"
         target="_blank"
         className="text-muted-foreground hover:text-foreground"
         rel="noopener noreferrer"
@@ -31,7 +31,7 @@ export default function SocialMediaLinks() {
         </svg>
       </Link>
       <Link
-        href="https://github.com/tedawf"
+        href="https://github.com/R-Thibault"
         target="_blank"
         className="text-muted-foreground hover:text-foreground"
         rel="noopener noreferrer"
@@ -56,7 +56,7 @@ export default function SocialMediaLinks() {
         </svg>
       </Link>
       <Link
-        href="mailto:hello@tedawf.com"
+        href="/contact"
         target="_blank"
         className="text-muted-foreground hover:text-foreground"
         rel="noopener noreferrer"

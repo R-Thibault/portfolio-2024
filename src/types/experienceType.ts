@@ -4,6 +4,6 @@ export type experienceType = {
   jobTitle: string;
   from: string;
   to: string;
-  jobDescription: string;
+  jobDescription: string[];
   jobWhere: string;
 };

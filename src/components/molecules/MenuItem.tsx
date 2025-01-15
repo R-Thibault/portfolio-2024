@@ -3,12 +3,17 @@
 import { cn } from "@/lib/utils";
 import { MenuProps } from "@/types/menuProps";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 
-export default function MenuItem({ children, href }: MenuProps) {
+export default function MenuItem({ children, href, onClick }: MenuProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
 
+  const handleClick = () => {
+    if (onClick) onClick();
+  };
+  const locale = useLocale();
   return (
     <li>
       <Link
@@ -17,7 +22,8 @@ export default function MenuItem({ children, href }: MenuProps) {
           isActive &&
             "bg-primary hover:bg-primary dark:hover:bg-primary hover:text-primary-foreground text-primary-foreground"
         )}
-        href={href}
+        href={`/${locale}${href}`}
+        onClick={handleClick}
       >
         {children}
       </Link>

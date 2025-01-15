@@ -4,7 +4,7 @@ export const projectsCardDatas = [
     title: "My Portfolio",
     description:
       "Portfolio created with Next.js for now, with plans to integrate an API and a backend.",
-    imageUrl: "/projects/portfolio.png",
+    imageUrl: "/projects/portfolio/portfolio.png",
     technologies: ["JS", "TS", "Next.JS", "Tailwind", "Shadcn"],
     websiteUrl: "https://portfolio.thibault-rossa.fr/",
     githubUrl: "https://github.com/R-Thibault/portfolio-2024",
@@ -14,7 +14,7 @@ export const projectsCardDatas = [
     title: "Photographer's Website",
     description:
       "Development of a photographer's website using Next.js and TailwindCSS. With a headless CMS (Contentful), the photographer can manage photos, albums, pricing, and more.",
-    imageUrl: "/projects/photowebsitegallery.png",
+    imageUrl: "/projects/photowebsite/photowebsitegallery2.png",
     technologies: ["JS", "TS", "Next.JS"],
     websiteUrl: "https://photowebsite.thibault-rossa.fr/",
     githubUrl: "https://github.com/R-Thibault/contentful-photowebsite",
@@ -24,7 +24,7 @@ export const projectsCardDatas = [
     title: "Le Quai Antique",
     description:
       "Website created with Symfony: a fictional restaurant project featuring a back-office for managing various functionalities.",
-    imageUrl: "/projects/quaiAntique.png",
+    imageUrl: "/projects/quaiAntique/quaiAntique1.png",
     technologies: ["PHP", "TWIG", "Symfony"],
     websiteUrl: "https://quai-antique.thibault-rossa.fr/",
     githubUrl: "https://github.com/R-Thibault/le_quai_antique",
@@ -34,7 +34,7 @@ export const projectsCardDatas = [
     title: "Ressources",
     description:
       "Year-end project for the CDA license: a website developed with Next.js, Node.js, and a GraphQL API, featuring file upload and instant messaging functionalities.",
-    imageUrl: "/projects/ressources.png",
+    imageUrl: "/projects/ressources/ressources1.png",
     technologies: [
       "JS",
       "TS",

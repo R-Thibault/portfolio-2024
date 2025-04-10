@@ -44,6 +44,8 @@ export function ProjectCard({ projectCard }: { projectCard: ProjectCardType }) {
       </CardContent>
 
       <CardFooter className="p-1  absolute bottom-0 left-0 right-0 flex flex-wrap gap-2 justify-center space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+        {projectCard.githubUrl.length !== 0 && 
+
         <Button variant="outline" size="sm" asChild className="p-2">
           <Link
             href={projectCard.githubUrl}
@@ -59,25 +61,30 @@ export function ProjectCard({ projectCard }: { projectCard: ProjectCardType }) {
             GitHub
           </Link>
         </Button>
+        }
+        {projectCard.websiteUrl.length !== 0 && 
         <Button variant="outline" size="sm" asChild className="p-2">
-          <Link
-            href={projectCard.websiteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Globe className="w-4 h-4" />
-            {projectCard.website}
-          </Link>
-        </Button>
-        <Button variant="outline" size="sm" asChild className="p-2">
-          <Link
-            href={`/${locale}/projects/` + projectCard.id}
-            rel="noopener noreferrer"
-          >
-            <Globe className="w-4 h-4" />
-            {projectCard.moreInfos}
-          </Link>
-        </Button>
+        <Link
+          href={projectCard.websiteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Globe className="w-4 h-4" />
+          {projectCard.website}
+        </Link>
+      </Button>
+        }
+      {projectCard.moreInfos.length !== 0 && 
+            <Button variant="outline" size="sm" asChild className="p-2">
+              <Link
+                href={`/${locale}/projects/` + projectCard.id}
+                rel="noopener noreferrer"
+              >
+                <Globe className="w-4 h-4" />
+                {projectCard.moreInfos}
+              </Link>
+            </Button>
+      }
       </CardFooter>
     </Card>
   );

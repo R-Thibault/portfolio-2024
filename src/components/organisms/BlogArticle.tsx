@@ -17,6 +17,7 @@ import {
 import { Card, CardContent } from "../ui/card";
 import { useTranslations } from "next-intl";
 
+
 export default function BlogArticle({ project }: { project: ProjectBlogType }) {
   const t = useTranslations("projectBlog");
   return (
@@ -84,31 +85,35 @@ export default function BlogArticle({ project }: { project: ProjectBlogType }) {
         </div>
         {/* Links */}
         <div className="mt-10 flex gap-4 ml-4">
-          <Button variant="outline" size="sm" asChild>
-            <Link
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/logos/github.svg"
-                width={20}
-                height={20}
-                alt="github logo"
-              ></Image>
-              GitHub
-            </Link>
-          </Button>
-          <Button variant="outline" size="sm" asChild>
-            <Link
-              href={project.websiteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Globe className="w-4 h-4 mr-2" />
-              {project.website}
-            </Link>
-          </Button>
+          {project.githubUrl.length !== 0 &&
+            <Button variant="outline" size="sm" asChild>
+              <Link
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/logos/github.svg"
+                  width={20}
+                  height={20}
+                  alt="github logo"
+                ></Image>
+                GitHub
+              </Link>
+            </Button>
+          }
+          {project.websiteUrl.length !== 0 &&
+            <Button variant="outline" size="sm" asChild>
+              <Link
+                href={project.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="w-4 h-4 mr-2" />
+                {project.website}
+              </Link>
+            </Button>
+          }
         </div>
       </div>
       {/* Blog Content */}

@@ -21,13 +21,6 @@ export const skillsDatas = [
     type: "languages",
   },
   {
-    id: 4,
-    src: "/logos/golang-logo.svg",
-    alt: "Golang Logo",
-    title: "Golang",
-    type: "languages",
-  },
-  {
     id: 5,
     src: "/logos/php-logo.svg",
     alt: "PHP Logo",

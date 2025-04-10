@@ -6,7 +6,7 @@
   },
   "presentationCard": {
     "hello": "Bonjour, ici Thibault",
-    "description": "Développeur JavaScript/TypeScript, PHP, et frameworks modernes. Je recherche activement des opportunités tout en élargissant mon expertise en Golang."
+    "description": "En reconversion vers les métiers du numérique depuis 2023, je me spécialise aujourd’hui en cybersécurité, avec un intérêt particulier pour la cybersécurité industrielle. Mon parcours a débuté lors de ma licence Concepteur Développeur d'Applications, où j’ai rapidement découvert que les aspects liés au DevOps et à la sécurité m’attiraient davantage que le développement applicatif pur."
   },
   "JobInfosDisplay": {
     "experiencesTab": "Experiences",
@@ -19,6 +19,20 @@
   "experiences": [
     {
       "id": 1,
+      "companyName": "Projets actuels",
+      "jobTitle": "Virage vers la cybersécurité",
+      "from": "2024-09-17",
+      "to": "2025-09-01",
+      "jobDescription": [
+        "Suivi de formations liées à la cybersécurité en vue d'intégrer un master en cybersécurité en alternance à partir de septembre 2025.",
+        "Formations terminées : Junior Cybersecurity Analyst (Cisco) ✅, Certified in Cybersecurity (ISC²) ✅",
+        "Formation en cours : SOC Analyst (TryHackMe)",
+        "Gestion et sécurisation d'un Lab pour le déploiement d'applications web : configuration d'iptables/nftables, mise en place de fail2ban et durcissement de Linux."
+      ],
+      "jobWhere": "Lyon"
+    },
+    {
+      "id": 2,
       "companyName": "Terascop",
       "jobTitle": "Développeur Full-stack",
       "from": "2023-09-01",
@@ -32,7 +46,7 @@
       "jobWhere": "Lyon"
     },
     {
-      "id": 2,
+      "id": 3,
       "companyName": "Spit / Factory Plast / KPlast",
       "jobTitle": "Technicien Supérieur/Chef d'équipe",
       "from": "2019-01-01",
@@ -45,7 +59,7 @@
       "jobWhere": "France"
     },
     {
-      "id": 3,
+      "id": 4,
       "companyName": "Elite Polymer / Sistema Ltd",
       "jobTitle": "Technicien Supérieur/Chef d'équipe",
       "from": "2017-01-01",
@@ -114,6 +128,17 @@
     },
     {
       "id": 2,
+      "title": "Lab Cybersécurité",
+      "description": "J'utilise actuellement le serveur sur lequel mon portfolio et mes applications sont déployées pour mettre en pratique les connaissances apprisent durant mes formations en cybersécurité. Phase 1 : Hardening linux configuration, fail2ban et nftables.",
+      "imageUrl": "/projects/cyberLab/labInProgress.png",
+      "technologies": [],
+      "websiteUrl": "",
+      "githubUrl": "",
+      "website": "",
+      "moreInfos": "Plus d'infos"
+    },
+    {
+      "id": 3,
       "title": "Site pour photographe",
       "description": "Développement d'un site web pour photographe avec Next.js et TailwindCSS. Grâce à un CMS headless (Contentful), le photographe peut gérer les photos, albums, tarifs, et plus encore.",
       "imageUrl": "/projects/photowebsite/photowebsitegallery2.png",
@@ -124,7 +149,7 @@
       "moreInfos": "Plus d'infos"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Le Quai Antique",
       "description": "Site web créé avec Symfony : un projet fictif de restaurant intégrant un back-office pour gérer différentes fonctionnalités.",
       "imageUrl": "/projects/quaiAntique/quaiAntique1.png",
@@ -135,7 +160,7 @@
       "moreInfos": "Plus d'infos"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Ressources",
       "description": "Projet de fin d'année pour la licence CDA : un site développé avec Next.js, Node.js et une API GraphQL, intégrant le téléchargement de fichiers et une messagerie instantanée.",
       "imageUrl": "/projects/ressources/ressources1.png",
@@ -183,6 +208,25 @@
     },
     {
       "id": 2,
+      "title": "Lab Cybersécurité",
+      "description": "J'utilise actuellement le serveur sur lequel mon portfolio et mes applications sont déployées pour mettre en pratique les connaissances apprisent durant mes formations en cybersécurité. ",
+      "content": [
+        "La création du lab va se faire en plusieur étape :",
+        "Etape 1 : Hardening linux configuration, fail2ban et nftables.",
+        "Etape 2 : Création de sauvegarde des données via cron, prévention Ddos, implementation IDS et monitoring.",
+        "Etape 3 : Pentest et audit sécurité, et puis amélioration de la sécurité selon retour pentest et audit.",
+        "Mon objectif est de me familiarisé avec les principes,concept et bonne pratique de la cybersécurité. En ajoutant la pratique à la théorie sur un environnement concret je m'éfforce d'apprendre la cybersécurité en vue d'un contrat pro pour un master en cybersécurité en septembre 2025."
+      ],
+      "imageUrl": [
+        "/projects/cyberLab/labInProgress.png"
+      ],
+      "technologies": [],
+      "websiteUrl": "",
+      "githubUrl": "",
+      "website": ""
+    },
+    {
+      "id": 3,
       "title": "Site d'un Photographe : Gestion Simplifiée et Design Moderne",
       "description": "Découvrez ce site de photographe, développé avec Next.js et TailwindCSS. Avec un CMS headless (Contentful), le photographe peut gérer ses photos, albums, tarifs et bien plus encore.",
       "content": [
@@ -204,7 +248,7 @@
       "website": "site"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Le Quai Antique : Un Projet Culinaire Web",
       "description": "Découvrez Le Quai Antique, un site vitrine créé avec Symfony et Twig, conçu pour un restaurant gastronomique fictif. Ce projet allie élégance et modernité, tout en offrant des fonctionnalités dynamiques telles qu'un système de réservation.",
       "content": [
@@ -224,7 +268,7 @@
       "website": "site"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Ressources : Un Projet Complet et Polyvalent",
       "description": "Projet de fin d'année développé avec Next.js, Node.js et GraphQL. Ce site inclut des fonctionnalités de téléchargement de fichiers et de messagerie instantanée, offrant une expérience utilisateur riche et interactive.",
       "content": [

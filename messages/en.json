@@ -6,7 +6,7 @@
   },
   "presentationCard": {
     "hello": "Hello, Thibault here",
-    "description": "JavaScript/TypeScript and PHP developer with experience in modern frameworks. Actively seeking opportunities while expanding expertise in Golang."
+    "description": "Transitioning into the tech industry since 2023, I am now focusing on cybersecurity, with a particular interest in industrial cybersecurity. My journey began during my Application Developer Designer degree, where I quickly realized that I was more drawn to DevOps and security than to pure application development."
   },
   "JobInfosDisplay": {
     "experiencesTab": "Experiences",
@@ -19,15 +19,15 @@
   "experiences": [
     {
       "id": 1,
-      "companyName": "Terascop",
-      "jobTitle": "Full-stack Developer",
-      "from": "2023-09-01",
-      "to": "2024-09-01",
+      "companyName": "Actual projects",
+      "jobTitle": "Step to cybersécurity",
+      "from": "2024-09-17",
+      "to": "2025-09-01",
       "jobDescription": [
-        "Migration of a PHP application under Docker with production deployment via Traefik, client deployment optimization, and software security improvement.",
-        "Major version upgrade (PHP 7 to PHP 8) of the same application, with security enhancements and optimization.",
-        "Redesign of the application's notification system, optimization of SQL queries and server response, alongside improvements to user experience and scalability of notifications.",
-        "Completed 40% of client developments in collaboration with the technical team, within a 6-month roadmap."
+        "Currently following cybersecurity training programs with the goal of joining a work-study Master’s in Cybersecurity starting in September 2025.",
+        "Completed certifications: Junior Cybersecurity Analyst (Cisco) ✅, Certified in Cybersecurity (ISC²) ✅",
+        "Ongoing training: SOC Analyst (TryHackMe)",
+        "Management and hardening of a personal lab environment for web application deployment: configuration of iptables/nftables, implementation of fail2ban, and Linux system hardening."
       ],
       "jobWhere": "Lyon"
     },
